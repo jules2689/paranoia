@@ -32,7 +32,7 @@ module Paranoia
 
   def delete
     return if new_record?
-    destroyed? ? destroy! : update_attribute_or_column(:deleted_at, Time.now)
+    destroyed? ? destroy! : update_attributes(:deleted_at => Time.now)
   end
 
   def restore!

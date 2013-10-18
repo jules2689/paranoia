@@ -36,7 +36,7 @@ module Paranoia
   end
 
   def restore!
-    update_attribute_or_column :deleted_at, nil
+    update_attributes :deleted_at, nil
   end
   alias :restore :restore!
 

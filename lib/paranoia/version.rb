@@ -1,3 +1,3 @@
 module Paranoia
-  VERSION = '1.3.1'
+  VERSION = "2.0.2"
 end
